@@ -1,8 +1,8 @@
 % Name: Sourav Pal
 % Date: November 1 2020
 
-clear;
-clc;
+clear;clc;
+
 rho_p= @(x,y) (1 + ((x+y*i))/2 + sqrt((1+((x+y*i)/2))^2-1));
 rho_m= @(x,y) (1 + ((x+y*i))/2 - sqrt((1+((x+y*i)/2))^2-1));
 N = 100;

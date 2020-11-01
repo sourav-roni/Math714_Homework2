@@ -2,11 +2,11 @@
 % Date: November 1 2020
 clear; clc;
 
-N = 6;
+N = 100;
 h = 1/N;
 Xs = 0:h:1;
 Ys = 0:h:1;
-delt = 0.5*h;
+delt = 0.5*h; % From CFL conditions
 T_horizon = 1;
 Ts = 0:delt:T_horizon;
 u_0 = @(x,y) 0;
@@ -36,10 +36,10 @@ for t=2:dims(2)
     end
 end
 
-% [X,Y] = meshgrid(Xs, Ys);
-% maxZ = max(max(abs(U(:,:))));
-% for i=1:dims(2)
-%     surf(X,Y,U(:,:,i))
-%     zlim([-maxZ,maxZ])
-%     pause(0.1)
-% end
+[X,Y] = meshgrid(Xs, Ys);
+maxZ = max(max(abs(U(:,:))));
+for i=1:dims(2)
+    surf(X,Y,U(:,:,i))
+    zlim([-maxZ,maxZ])
+    pause(0.1)
+end
