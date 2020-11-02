@@ -38,7 +38,7 @@ fprintf("\n");
 % Use a value of del_t such that CFL conditions are satisfied for all cases
 del_t = 0.5*(hs(1,5)); 
 % Time horizon
-T = 1;
+T = 5;
 fprintf("Time horizon = %f, Delta_t = %f \n", T, del_t);
 
 Ts = 0:del_t:T;
