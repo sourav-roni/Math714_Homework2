@@ -8,4 +8,11 @@
 
 ![alt text](https://github.com/sourav-roni/Math714_Homework2/blob/main/QuestionC/err_plt.png)
 
-3) 
+3) In order to generate the plot to analyze roots of "rho" for part (C)(b), one can run the file "root_analysis.m". The plot that will be generated is presented below.
+![alt text](https://github.com/sourav-roni/Math714_Homework2/blob/main/QuestionC/root.png)
+
+Finally, the region of stability plot is also presented next. 
+
+Note: Please see the solution document for more details on the analysis.
+![alt text](https://github.com/sourav-roni/Math714_Homework2/blob/main/QuestionC/complex.png)
+
